@@ -1,0 +1,386 @@
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+         :root {
+            --maincolor: #e8786e;
+            --darkcolor: #555;
+            --greycolor: rgb(126, 124, 124);
+            --bgcolor: #fceae9;
+            --border: .1rem solid rgba(0, 0, 0, .1);
+            --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+        }
+        
+        .main-btn {
+            background-color: var(--maincolor);
+            color: white;
+        }
+        
+        .main-btn:hover {
+            background-color: var(--darkcolor);
+            color: var(--bgcolor);
+            transition: .3s;
+        }
+        /* start navbar */
+        
+        .navbar {
+            background-color: white;
+        }
+        
+        .logo {
+            font-family: 'Nunito', sans-serif;
+            font-size: 2rem;
+            color: var(--darkcolor);
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        
+        .logo :hover,
+        .logo:focus,
+        .logo :active {
+            text-decoration: none;
+            color: var(--maincolor);
+        }
+        
+        a:hover {
+            color: var(--maincolor);
+        }
+        
+        .navbar.navbar .navbar-nav .nav-link {
+            color: var(--greycolor);
+            font-weight: 400;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 1.2rem;
+        }
+        
+        .navbar .navbar-nav .nav-link:hover,
+        .navbar .navbar-nav .nav-link:focus,
+        .navbar .navbar-nav .nav-link:active {
+            color: var(--maincolor);
+        }
+        
+        .navbar .navbar-toggler:focus {
+            box-shadow: none;
+        }
+        /* end navbar */
+        /* start landing */
+        
+        .landing {
+            background-color: var(--bgcolor);
+            min-height: calc(100vh - 17px);
+        }
+        
+        .content {
+            margin-top: 10rem;
+        }
+        
+        .content h2 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 2rem;
+            color: var(--darkcolor);
+            font-weight: 800;
+        }
+        
+        .landing .cloud {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 14rem;
+            background-size: 250rem 14rem;
+            background: url(../images/cloud.png) repeat-x;
+            animation: cloud 10s linear infinite;
+        }
+        
+        @keyframes cloud {
+            0% {
+                background-position-x: 0rem;
+            }
+            100% {
+                background-position-x: -250rem;
+            }
+        }
+        
+        .landing .cloud-1 {
+            opacity: .5;
+            height: 14rem;
+            background-size: 250rem 14rem;
+            animation-direction: reverse;
+            animation-duration: 15s;
+        }
+        /* end landing */
+        /* start Services */
+        
+        .services {
+            padding-top: 5.5rem;
+        }
+        
+        .services h1 {
+            font-family: 'Nunito', sans-serif;
+            color: var(--darkcolor);
+            font-weight: 900;
+        }
+        
+        .services h1 span {
+            background-color: var(--bgcolor);
+            color: var(--maincolor);
+            padding: 0.7rem 0.3rem;
+            border-radius: 8px;
+        }
+        
+        .services .box {
+            text-align: center;
+            border: var(--border);
+            box-shadow: var(--box-shadow);
+            border-radius: .5rem;
+            padding: 4rem 2rem;
+        }
+        
+        .services .box h4 {
+            font-family: 'Nunito', sans-serif;
+            color: var(--darkcolor);
+            font-weight: bold;
+        }
+        /* end Services */
+        /* start  about us */
+        
+        .about {
+            padding-top: 5.5rem;
+        }
+        
+        .about h1 {
+            font-family: 'Nunito', sans-serif;
+            color: var(--darkcolor);
+            font-weight: 900;
+        }
+        
+        .about h1 span {
+            background-color: var(--bgcolor);
+            color: var(--maincolor);
+            padding: 0.7rem 0.3rem;
+            border-radius: 8px;
+        }
+        
+        .about h4 {
+            font-family: 'Nunito', sans-serif;
+            color: var(--darkcolor);
+            font-weight: 900;
+        }
+        
+        .about-box {
+            padding: 20px;
+            border: var(--border);
+            box-shadow: var(--box-shadow);
+            width: 100%;
+            height: 150px;
+            border-radius: 20px;
+        }
+        
+        .about .icon {
+            color: var(--maincolor);
+            font-size: 35px;
+            padding-top: 0px;
+        }
+        
+        .about h5 {
+            color: var(--darkcolor);
+        }
+        /* end  about us */
+        /* Start portofolio */
+        
+        .portfolio {
+            padding-top: 5.5rem;
+        }
+        
+        .portfolio h1 {
+            font-family: 'Nunito', sans-serif;
+            color: var(--darkcolor);
+            font-weight: 900;
+        }
+        
+        .portfolio h1 span {
+            background-color: var(--bgcolor);
+            color: var(--maincolor);
+            padding: 0.7rem 0.3rem;
+            border-radius: 8px;
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        .portfolio .card {
+            position: relative;
+            overflow: hidden;
+            margin-top: 14px;
+            height: 200px;
+        }
+        
+        .portfolio .card:before {
+            height: 100%;
+            width: 100%;
+            content: '  ';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #fff;
+            clip-path: circle(37% at 93% 0);
+            transition: .3s ease-in-out;
+        }
+        
+        .card span {
+            position: absolute;
+            top: 1rem;
+            right: 1.6rem;
+            font-weight: bolder;
+            font-size: 2.2rem;
+            color: var(--darkcolor);
+        }
+        
+        .portfolio .card-body {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 3rem;
+            left: 0;
+            transition-delay: .3s;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+        }
+        
+        .card:hover .card-body {
+            top: 0;
+            opacity: 1;
+        }
+        
+        .card .card-title {
+            font-size: 2rem;
+            padding-bottom: .2rem;
+            color: var(--darkcolor);
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        .card:hover::before {
+            clip-path: circle(100%);
+        }
+        
+        .image {
+            width: 400px;
+            height: 200px;
+        }
+        /* end portofolio */
+        /* start pricing*/
+        
+        .pricing {
+            padding-top: 4rem;
+        }
+        
+        .pricing .heading {
+            font-family: 'Nunito', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--maincolor);
+        }
+        
+        .pricing .txt {
+            font-size: 1.7rem;
+        }
+        
+        .pricing .pricing-img {
+            margin: 0.2rem 5.5rem;
+        }
+        /* end pricing */
+        /* start  Review */
+        
+        .review {
+            padding-top: 4rem;
+        }
+        
+        .review .review-img {
+            height: 250px;
+            border: 2px var(--maincolor);
+        }
+        
+        .review .card-img-top {
+            height: 250px;
+        }
+        
+        .rate {
+            color: var(--maincolor);
+        }
+        /* end Review */
+        /* start contact */
+        
+        .contact {
+            padding-top: 5rem;
+        }
+        
+        .contact .col-lg-4 .card {
+            height: 200px;
+        }
+        
+        .contact .map {
+            border: var(--border);
+            box-shadow: var(--box-shadow);
+            border-radius: .5rem;
+            height: 438px;
+        }
+        
+        .contact .heading {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--darkcolor);
+        }
+        
+        .contact input {
+            width: 89%;
+            background-color: rgb(230, 227, 227);
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        .contact textarea {
+            width: 89%;
+            background-color: rgb(230, 227, 227);
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        .contact input:focus {
+            width: 90%;
+            background-color: var(--bgcolor);
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        .contact textarea:focus {
+            width: 90%;
+            background-color: var(--bgcolor);
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        .contact input::placeholder {
+            font-size: 1.2rem;
+            font-family: 'Nunito', sans-serif;
+        }
+        /* end contact */
+        /* start footer */
+        
+        .footer {
+            background-color: var(--bgcolor);
+        }
+        
+        .footer h3 {
+            font-size: 1.8rem;
+            font-family: 'Nunito', sans-serif;
+            color: var(--darkcolor);
+            font-weight: bold;
+        }
+        
+        .foot-list {
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding-left: 15px;
+        }
+        
+        .foot-list :hover {
+            padding-left: 20px;
+            transition: .4s ease-in-out;
+        }
+        /* end footer */

@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- my owner style -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>
+        Marketo </title>
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top ">
+        <div class="container">
+
+            <a class="navbar-brand logo" href="#">
+                Marketo
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="56" height="56"
+viewBox="0 0 172 172"
+style=" fill:#fa314a;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="M86,109.22c-12.82405,0 -23.22,-10.39595 -23.22,-23.22v0c0,-12.82405 10.39595,-23.22 23.22,-23.22v0c12.82405,0 23.22,10.39595 23.22,23.22v0c0,12.82405 -10.39595,23.22 -23.22,23.22z" fill="#cccccc"></path><g><path d="M141.48601,34.19232l-98.04,-2.1672c-5.7018,0 -10.32,4.6182 -10.32,10.32v100.2072c0,14.32932 107.75112,20.38716 116.58504,9.74724c11.7132,-14.10744 2.09496,-107.78724 2.09496,-107.78724c0,-5.7018 -4.6182,-10.32 -10.32,-10.32z" fill="#e8786e"></path><path d="M135.68101,148.77012h-98.04c-7.11564,0 -12.9,-5.78952 -12.9,-12.9v-98.04c0,-7.11564 5.78436,-12.9 12.9,-12.9h98.04c7.11048,0 12.9,5.78436 12.9,12.9v98.04c0,7.11048 -5.78952,12.9 -12.9,12.9zM37.64101,30.09012c-4.27248,0 -7.74,3.47268 -7.74,7.74v98.04c0,4.26732 3.46752,7.74 7.74,7.74h98.04c4.26732,0 7.74,-3.47268 7.74,-7.74v-98.04c0,-4.26732 -3.47268,-7.74 -7.74,-7.74z" fill="#000000"></path><path d="M109.88101,66.21012h-46.44c-1.42932,0 -2.58,-1.15584 -2.58,-2.58c0,-1.42416 1.15068,-2.58 2.58,-2.58h46.44c1.42416,0 2.58,1.15068 2.58,2.58c0,1.42932 -1.15584,2.58 -2.58,2.58z" fill="#000000"></path><path d="M109.88101,89.43012h-46.44c-1.42932,0 -2.58,-1.15584 -2.58,-2.58c0,-1.42416 1.15584,-2.58 2.58,-2.58h46.44c1.42416,0 2.58,1.15584 2.58,2.58c0,1.42416 -1.15584,2.58 -2.58,2.58z" fill="#000000"></path><path d="M109.88101,112.65012h-46.44c-1.42932,0 -2.58,-1.15584 -2.58,-2.58c0,-1.42416 1.15068,-2.58 2.58,-2.58h46.44c1.42416,0 2.58,1.15584 2.58,2.58c0,1.42416 -1.15584,2.58 -2.58,2.58z" fill="#000000"></path></g></g></svg>          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link  p-lg-3 p-2 active" aria-current="page" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 p-2" href="#services" data-value="services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 p-2" href="#portfolio" data-value="portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 p-2" href="#about" data-value="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  p-lg-3 p-2" href="#review" data-value="review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  p-lg-3 p-2" href="#pricing" data-value="pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  p-lg-3 p-2" href="#contact" data-value="contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start landing -->
+
+    <div class="landing position-relative" id="home">
+        <div class="container text-center text-md-start mt-12">
+            <div class="row">
+                <div class="content   col-md-5 col-lg-5 ">
+                    <h2 class="text-capitalize "> grow your business with us</h2>
+                    <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere atque sapiente veritatis nesciunt adipisci culpa.</p>
+                    <a href="#" class="btn main-btn rounded-end p-2 w-50 text-capitalize">   try for free   </a>
+                </div>
+                <div class="col-lg-7 col-md-7">
+                    <img class="img-fluid" src="images/rocket.svg" alt="">
+                </div>
+                <div class="cloud cloud-1 "></div>
+                <div class="cloud cloud-2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end landing -->
+
+    <!-- startServices-->
+    <div class="services " id="services">
+        <div class="container text-center ">
+            <h1 class="text-capitalize mb-2 ">
+                our
+                <span>Services</span>
+            </h1>
+
+            <div class="row mt-3">
+                <div class="col-md-6 col-lg-4 mb-3">
+
+                    <div class="box">
+                        <img class="img-fluid mb-2" src="images/s-1.png" alt="">
+                        <h4>
+                            Web Design
+
+                        </h4>
+                        <p>
+                            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?
+                        </p>
+
+                        <div class="btn main-btn">
+                            Learn More
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+
+                    <div class="box">
+                        <img class="img-fluid mb-2" src="images/s-2.png" alt="">
+                        <h4>
+                            Seo Marketing
+
+                        </h4>
+                        <p>
+                            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?
+                        </p>
+
+                        <div class="btn main-btn">
+                            Learn More
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-3">
+
+                    <div class="box">
+                        <img class="img-fluid mb-2" src="images/s-3.png" alt="">
+                        <h4>
+                            Web Hosting
+
+                        </h4>
+                        <p>
+                            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?
+                        </p>
+
+                        <div class="btn main-btn">
+                            Learn More
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-3">
+
+                    <div class="box">
+                        <img class="img-fluid mb-2" src="images/s-4.png" alt="">
+                        <h4>
+                            Digital Marketing
+
+                        </h4>
+                        <p>
+                            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?
+                        </p>
+
+                        <div class="btn main-btn">
+                            Learn More
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+
+                    <div class="box">
+                        <img class="img-fluid mb-2" src="images/s-6.png" alt="">
+                        <h4>
+                            Content Marketing
+
+                        </h4>
+                        <p>
+                            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?
+                        </p>
+
+                        <div class="btn main-btn">
+                            Learn More
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+
+                    <div class="box">
+                        <img class="img-fluid  mb-2" src="images/s-5.png" alt="">
+                        <h4>
+                            Ad Campaign
+
+                        </h4>
+                        <p>
+                            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Esse, Animi?
+                        </p>
+
+                        <div class="btn main-btn">
+                            Learn More
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- end Services-->
+
+
+        <!-- srart about us -->
+
+        <div class="about " id="about">
+            <div class="container text-center  text-md-start">
+                <h1 class="text-capitalize m-5  text-center">
+                    <span>  about 
+                    </span> us
+                </h1>
+                <div class="row">
+                    <div class=" col-lg-5">
+                        <img class="img-fluid" src="images/about-img.png" alt="">
+                    </div>
+
+
+                    <div class="col-lg-7 mt-5">
+                        <h4> Big Projects Start With Big Dreams
+                        </h4>
+                        <p class="text-black-50">
+                            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Alias Blanditiis, Fugiat Consequatur Enim Amet Ullam Facere Quaerat, Quos Quae Mollitia Inventore! Hic, Excepturi Debitis Velit Maxime Ut In At Iusto.
+                        </p>
+
+                        <div class="btn main-btn mt-3">
+                            Learn More
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-6 col-lg-4 mb-3 ">
+                                <div class="text-center about-box">
+                                    <div class="icon "> <i class="fas fa-award"></i></div>
+                                    <h5>14 award won</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4  mb-3">
+                                <div class="text-center about-box">
+                                    <div class="icon "> <i class="fas fa-user "></i></div>
+                                    <h5>250 satisfied clients</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-3">
+                                <div class="text-center about-box">
+                                    <div class="icon ">
+
+                                        <i class="fas fa-project-diagram "></i></div>
+                                    <h5>200 projects completed</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end about us -->
+
+        <!-- start portfolio -->
+
+        <div class="portfolio" id="portfolio">
+
+            <div class="container text-center text-capitalize text-md-start">
+                <h1 class="text-center">
+                    our <span>portfolio </span>
+                </h1>
+
+                <div class="row">
+
+                    <!-- <div class="col-md-4 col-lg-4  pt-3  mb-3">
+                        <div class="box  mt-3 position-relative">
+                            <span>01</span>
+                            <img class="" src="images/port-img1.jpg" alt="">
+                            <div class="content">
+                                <h3>web design</h3>
+                                <p>1st may, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4  pt-3  mb-3">
+                        <div class="box mt-3 position-relative">
+                            <span>02</span>
+                            <img class="" src="images/port-img2.jpg" alt="">
+                            <div class="content">
+                                <h3>web design</h3>
+                                <p>1st may, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4  pt-3  mb-3">
+                        <div class="box  mt-3">
+                            <span>03</span>
+                            <img class="" src="images/port-img3.jpg" alt="">
+                            <div class="content">
+                                <h3>web design</h3>
+                                <p>1st may, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 pt-3 mb-3">
+                        <div class="box">
+                            <span>04</span>
+                            <img class="" src="images/port-img4.jpg" alt="">
+                            <div class="content">
+                                <h3>web design</h3>
+                                <p>1st may, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 pt-3  mb-3">
+                        <div class="box">
+                            <span>05</span>
+                            <img src="images/port-img5.jpg" alt="" class="">
+                            <div class="content">
+                                <h3>web design</h3>
+                                <p>1st may, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 pt-3  mb-3">
+                        <div class="box">
+                            <span>06</span>
+                            <img class="" src="images/port-img6.jpg" alt="">
+                            <div class="content">
+                                <h3>web design</h3>
+                                <p>1st may, 2021</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class=" card">
+                            <span>01</span>
+
+                            <img class="card-img-top  img-fluid h-100" src="images/port-img2.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Design</h5>
+                                <p class="card-text text-black-50">1st may, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class=" card">
+                            <span>02</span>
+                            <img class="card-img-top  img-fluid h-100" src="images/port-img1.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Design</h5>
+                                <p class="card-text text-black-50">1st may, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class=" card">
+                            <span>03</span>
+                            <img class="card-img-top  img-fluid h-100" src="images/port-img3.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Design</h5>
+                                <p class="card-text text-black-50">1st may, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class=" card">
+                            <span>04</span>
+                            <img class="card-img-top  img-fluid h-100" src="images/port-img4.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title ">Web Design</h5>
+                                <p class="card-text text-black-50">1st may, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class=" card">
+                            <span>05</span>
+                            <img class="card-img-top  img-fluid h-100" src="images/port-img5.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title ">Web Design</h5>
+                                <p class="card-text text-black-50">1st may, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class=" card">
+                            <span>06</span>
+                            <img class="card-img-top  img-fluid h-100" src="images/port-img6.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title ">Web Design</h5>
+                                <p class="card-text text-black-50">1st may, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end portfolio -->
+        <!-- start our pricing -->
+        <div class="pricing  text-center " id="pricing">
+            <div class="container">
+                <h1 class="text-capitalize m-5">
+                    our
+                    <span>Pricing</span>
+                </h1>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card ">
+                            <div class=" pricing-img"><img class="card-img-top" src="images/p-1.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title heading">$30.99/Mo </h5>
+                                <p class="card-text txt">
+                                    <ul class="list-unstyled text-black-50 ">
+                                        <li class="mb-3"> 5GB data</li>
+                                        <li class="mb-3">2 domains</li>
+                                        <li class="mb-3">seo marketing</li>
+                                        <li class="mb-3">24 / 7 services</li>
+                                        <li class="mb-3">maintainance</li>
+                                    </ul>
+                                    <div class="btn main-btn"> Cloose Plan</div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6  mb-4">
+                        <div class="card">
+                            <div class=" pricing-img"> <img class="card-img-top" src="images/p-2.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title heading">$50.99/Mo
+                                </h5>
+                                <p class="card-text txt">
+                                    <ul class="list-unstyled text-black-50 ">
+                                        <li class="mb-3"> 5GB data</li>
+                                        <li class="mb-3">2 domains</li>
+                                        <li class="mb-3">seo marketing</li>
+                                        <li class="mb-3">24 / 7 services</li>
+                                        <li class="mb-3">maintainance</li>
+                                    </ul>
+                                    <div class="btn main-btn"> Cloose Plan</div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6   mb-4">
+                        <div class="card">
+                            <div class=" pricing-img"> <img class="card-img-top" src="images/p-3.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title heading">
+                                    $90.99/Mo
+                                </h5>
+                                <p class="card-text txt">
+                                    <ul class="list-unstyled text-black-50 ">
+                                        <li class="mb-3"> 5GB data</li>
+                                        <li class="mb-3">2 domains</li>
+                                        <li class="mb-3">seo marketing</li>
+                                        <li class="mb-3">24 / 7 services</li>
+                                        <li class="mb-3">maintainance</li>
+                                    </ul>
+                                    <div class="btn main-btn"> Cloose Plan</div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end our pricing -->
+
+        <!-- start Review -->
+        <div class="review text-center " id="review">
+            <div class="container">
+                <h1 class="text-capitalize m-5">
+                    client's
+                    <span>review</span>
+                </h1>
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 mb-2">
+                        <div class="card">
+                            <div class="review-img">
+                                <img src="images/pic-4.jpg" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">John Deo</h5>
+                                <ul class="list-inline list-unstyled">
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-caret-down"></i>
+                                    </li>
+
+                                </ul>
+                                <p class="card-text text-black-50">Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Qui Rerum Ducimus, Fuga Numquam Itaque Modi Magnam Officiis Obcaecati! Aliquid Delectus Aperiam Harum Voluptas Animi Unde Sapiente Quidem Laudantium Facere? Deserunt.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-2">
+                        <div class="card">
+                            <div class="review-img">
+                                <img src="images/pic-5.jpg" class="card-img-top img-fluid">
+
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">John Deo</h5>
+                                <ul class="list-inline list-unstyled">
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-caret-down"></i>
+                                    </li>
+
+                                </ul>
+                                <p class="card-text text-black-50">Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Qui Rerum Ducimus, Fuga Numquam Itaque Modi Magnam Officiis Obcaecati! Aliquid Delectus Aperiam Harum Voluptas Animi Unde Sapiente Quidem Laudantium Facere? Deserunt.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-2">
+                        <div class="card">
+                            <div class="review-img">
+                                <img src="images/pic-4.png" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">John Deo</h5>
+                                <ul class="list-inline list-unstyled">
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-caret-down"></i>
+                                    </li>
+
+                                </ul>
+                                <p class="card-text text-black-50">Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Qui Rerum Ducimus, Fuga Numquam Itaque Modi Magnam Officiis Obcaecati! Aliquid Delectus Aperiam Harum Voluptas Animi Unde Sapiente Quidem Laudantium Facere? Deserunt.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-2">
+                        <div class="card">
+                            <div class="review-img">
+                                <img src="images/pic-6.jpg" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">John Deo</h5>
+                                <ul class="list-inline list-unstyled">
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-star"></i></li>
+                                    <li class="list-inline-item rate"><i class="fa-solid fa-caret-down"></i>
+                                    </li>
+
+                                </ul>
+                                <p class="card-text text-black-50">Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Qui Rerum Ducimus, Fuga Numquam Itaque Modi Magnam Officiis Obcaecati! Aliquid Delectus Aperiam Harum Voluptas Animi Unde Sapiente Quidem Laudantium Facere? Deserunt.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Review -->
+
+        <!-- strat contact -->
+        <div class="contact text-center mt-5" id="contact">
+            <div class="container">
+                <h1 class="text-capitalize m-5">
+                    <span>Contact</span> us
+                </h1>
+                <div class="row">
+                    <div class="col-lg-4  mt-4">
+
+                        <div class="card rounded-5">
+                            <div class="card-body">
+                                <i class="fas fa-phone fa-3x rate"></i>
+                                <h5 class="card-title">Our Number</h5>
+                                <p class="card-text">
+                                    <ul class="list-unstyled">
+                                        <li class="text-black-50">+123-456-7890
+                                        </li>
+                                        <li class="text-black-50">+111-456-7890
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-envelope fa-3x rate"></i>
+                                <h5 class="card-title">Our Email</h5>
+                                <p class="card-text">
+                                    <ul class="list-unstyled mb-2">
+                                        <li class="text-black-50">samarelsisis714@gmail.com
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  mt-4">
+
+                        <div class="card">
+                            <div class="card-body">
+
+                                <i class="fas fa-map-marker-alt fa-3x rate"></i>
+                                <h5 class="card-title">Our Location</h5>
+                                <p class="card-text">
+                                    <ul class="list-unstyled mb-2">
+                                        <li class="text-black-50">Tanta,Egypt
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54837.4760158513!2d31.03437627188303!3d30.793035093534247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c95daafcf035%3A0x7421820c5e8cae42!2z2LfZhti32KfYjCDYt9mG2LfYpyAo2YLYs9mFIDIp2Iwg2YXYsdmD2LIg2LfZhti32KfYjCDYp9mE2LrYsdio2YrYqQ!5e0!3m2!1sar!2seg!4v1647378570985!5m2!1sar!2seg"
+                                    allowfullscreen="" loading="lazy" class="w-100 map"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 mt-4">
+                        <div class="card card-form">
+                            <form action="text-center">
+                                <input type="text" class="form-control  m-3 " placeholder="name">
+                                <input type="email" class="form-control  m-3 " placeholder="email">
+                                <input type="number" class="form-control  m-3 " placeholder="number">
+                                <input type="datetime-local" class="form-control  m-3 " placeholder="data">
+                                <textarea name=" " placeholder="message " class="form-control m-3  " id=" " rows="7 ">
+                                    </textarea>
+                                <button class="btn main-btn w-50 mb-2" type="submit">Submit</button> </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Contact -->
+    <!-- start footer -->
+    <footer class="footer  pt-5 pb-5 text-center text-md-start text-capitalize">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <h3>quick links</h3>
+                    <ul class="list-unstyled">
+                        <li class="foot-list">
+
+                            <a class=" text-black-50" href="#services" data-value="services"> <i class="fa fa-arrow-right rate "></i>Services</a>
+                        </li>
+                        <li class="foot-list">
+                            <a class="text-black-50 " href="#portfolio" data-value="portfolio"> <i class="fa fa-arrow-right rate "></i>Portfolio</a>
+                        </li>
+                        <li class="foot-list">
+                            <a class="text-black-50" href="#about" data-value="about"> <i class="fa fa-arrow-right rate "></i>About</a>
+                        </li>
+                        <li class="foot-list">
+                            <a class="text-black-50" href="#review" data-value="review"> <i class="fa fa-arrow-right rate "></i>Review</a>
+                        </li>
+                        <li class="foot-list">
+                            <a class="text-black-50" href="#pricing" data-value="pricing"> <i class="fa fa-arrow-right rate "></i>Pricing</a>
+                        </li>
+                        <li class="foot-list">
+                            <a class="text-black-50" href="#contact" data-value="contact"> <i class="fa fa-arrow-right rate "></i>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h3>our services</h3>
+                    <ul class="list-unstyled">
+                        <li class="foot-list">
+                            <a href="#" class="text-black-50 "> <i class="fas fa-check rate"></i> web design </a>
+                        </li>
+                        <li class="foot-list">
+                            <a href="#" class="text-black-50 "> <i class="fas fa-check rate"></i> digital marketing </a>
+                        </li>
+                        <li class="foot-list">
+                            <a href="#" class="text-black-50 "> <i class="fas fa-check rate"></i> email marketing </a>
+                        </li>
+                        <li class="foot-list">
+                            <a href="#" class="text-black-50 "> <i class="fas fa-check rate"></i> content marketing </a>
+                        </li>
+                        <li class="foot-list">
+                            <a href="#" class="text-black-50 "> <i class="fas fa-check rate"></i> seo marketing </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h3>follow us</h3>
+                    <ul class="list-unstyled">
+                        <li class="foot-list">
+                            <a href="#https://www.facebook.com/profile.php?id=100022176923116 " class="text-black-50 "> <i class="fab fa-facebook-f  rate"></i> facebook </a>
+                        </li>
+                        <li class="foot-list">
+                            <a href="#" class="text-black-50 "> <i class="fab fa-instagram rate"></i> instagram </a>
+                        </li>
+                        <li class="foot-list">
+                            <a href="#https://twitter.com/sugarrrrr4r?s=09&fbclid=IwAR1Gwe-1qTdboTCbAGzy0-6lS1N5li3egAWG10dzkXvVD-XJsaNngZU4Huo" class="text-black-50 "> <i class="fab fa-twitter rate"></i> twitter </a>
+                        </li>
+                        <li class="foot-list">
+                            <a href="#https://www.linkedin.com/in/samar-elsisi-7b85541aa" class="text-black-50 "> <i class="fab fa-linkedin rate"></i> linkedin</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous ">
+</script>
+
+<script src="javascript/script.js "></script>
+
+</html>
+</script>
+
+</html>
